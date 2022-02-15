@@ -49,8 +49,7 @@ firstpage=true,
 opacity=0.25,
 angle=0,
 ]{background}
-\backgroundsetup{contents={\includegraphics[scale=0.1]
-{background.jpg}}}
+\backgroundsetup{contents={\includegraphics[scale=0.1]{template/background.jpg}}}
 
 
 
@@ -104,15 +103,28 @@ angle=0,
 
 \section{System description}
 % Describe your system briefly including its main functionality (bulleted list). In particular, you must produce one of the discussed context diagrams: the informal and formal notation. (cf. the lecture 1).
-The system is a gathered overview of financial assets, . 
 
+The system is a gathered overview of personal financial assets, collected from integrations to financial institutions such as banks and investment platforms. 
 \subsection{Context diagram}
-% Insert informal context diagram
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/tmp_context.png}
+  \caption{Informal context diagram}
+  \label{fig:context_diagram}
+\end{figure}
 
 
 \subsection{Overall functionality}
 \begin{itemize}
-    \item T
+    \item The system should give an overview of a citizen's financial status, which includes:
+    \begin{itemize}
+        \item Bank integration to show transactions
+        \item Tinglysning integration to show assets like cars and houses
+        \item Integration with investment platform, stocks, crypto valuta ect.
+        \item 
+    \end{itemize}
 \end{itemize}
  
 
