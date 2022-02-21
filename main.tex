@@ -46,7 +46,7 @@
 % Front page background %
 \usepackage[
 firstpage=true,
-opacity=0.25,
+opacity=0.20,
 angle=0,
 ]{background}
 \backgroundsetup{contents={\includegraphics[scale=0.1]{template/background.jpg}}}
@@ -69,11 +69,11 @@ angle=0,
             
         \vspace{1.5cm}
          
-        \textbf{Christian Skovsgaard Rieck (crie@itu.dk)}
-        \textbf{Benjamin Lindgren Christensen (belc@itu.dk)}
-        \textbf{Gianmarco Murru (gimu@itu.dk)}
-        \textbf{Christian Skovsgaard Rieck (crie@itu.dk)}
-        \textbf{Christian Skovsgaard Rieck (crie@itu.dk)}
+        \textbf{Benjamin Lindgren Christensen (belc@itu.dk)}\\
+        \textbf{Christian Skovsgaard Rieck (crie@itu.dk)}\\
+        \textbf{Christian Hedegaard Pliess Larsen (hecl@itu.dk)}\\
+        \textbf{Gianmarco Murru (gimu@itu.dk)}\\
+        \textbf{Melissa Høegh Marcher (mhom@itu.dk)}\\
             
         \vspace{1.5cm}
         
@@ -86,12 +86,12 @@ angle=0,
             
         \vspace{0.8cm}
             
-        \includegraphics[width=0.4\textwidth]{template/ITU_logo_UK jpg.jpg}
+        \includegraphics[width=0.5\textwidth]{template/ITU_logo_UK jpg.jpg}
             
         \Large
         Department of Computer Science\\
         Denmark\\
-        Spring Semester
+        Spring 2022
             
     \end{center}
 \end{titlepage}
@@ -105,27 +105,33 @@ angle=0,
 % Describe your system briefly including its main functionality (bulleted list). In particular, you must produce one of the discussed context diagrams: the informal and formal notation. (cf. the lecture 1).
 
 The system is a gathered overview of personal financial assets, collected from integrations to financial institutions such as banks and investment platforms. 
-\subsection{Context diagram}
 
+\subsection{Context diagram}
+Figure \ref{fig:context_diagram} shows an informal context diagram of cNance, a personal finance overview system. 
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.7\textwidth]{figures/tmp_context.png}
+  \includegraphics[width=0.7\textwidth]{figures/context-diagram2.png}
   \caption{Informal context diagram}
   \label{fig:context_diagram}
 \end{figure}
 
 
 \subsection{Overall functionality}
-\begin{itemize}
-    \item The system should give an overview of a citizen's financial status, which includes:
+
+The system should give an overview of a citizen's financial status, which includes:
     \begin{itemize}
         \item Bank integration to show transactions
         \item Tinglysning integration to show assets like cars and houses
         \item Integration with investment platform, stocks, crypto valuta ect.
-        \item 
+        \item SKAT integration with overview and legal assistance
+        \item Graphs that show personal historical financial data and projected future 
+        \item Data can optionally be sent to the integrations, in order for the user to receive:
+        \begin{itemize}
+            \item personalized bank offers
+            \item 
+        \end{itemize} 
     \end{itemize}
-\end{itemize}
  
 
 \section{Architectural analysis}
@@ -158,6 +164,8 @@ The system is a gathered overview of personal financial assets, collected from i
 
 \section{Architecture backlog}
 % Maintain and report on an architecture backlog. The backlog should contain decisions you have to make, work you need to do, issues you have etc. all in the scope of the system and not the project.
+
+
 
 
 \label{LastPage}~
